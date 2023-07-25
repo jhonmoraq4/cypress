@@ -4,8 +4,13 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "cypress:open":"cypress open"
+    "test":"cypress open",
+    "test2": "echo \"Error: no test specified\" && exit 1",
+    "cypress:open":"cypress open",
+    "cypress:runDefault":"cypress run",
+    "cypress:runDefaultSpec":"cypress run --spec D:/Repositorio/Cypress/cypress/e2e/Prueba/0-prueba_spec.cy.js",
+    "cypress:runChrome":"cypress run --browser chrome --spec D:/Repositorio/Cypress/cypress/e2e/Prueba/0-prueba_spec.cy.js",
+    "cypress:runChromeHeadless":"cypress run --headless --browser chrome --spec D:/Repositorio/Cypress/cypress/e2e/Prueba/0-prueba_spec.cy.js"
   },
   "author": "",
   "license": "ISC",
