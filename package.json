@@ -4,17 +4,27 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test":"cypress open",
+    "test": "cypress open",
     "test2": "echo \"Error: no test specified\" && exit 1",
-    "cypress:open":"cypress open",
-    "cypress:runDefault":"cypress run",
-    "cypress:runDefaultSpec":"cypress run --spec D:/Repositorio/Cypress/cypress/e2e/Prueba/0-prueba_spec.cy.js",
-    "cypress:runChrome":"cypress run --browser chrome --spec D:/Repositorio/Cypress/cypress/e2e/Prueba/0-prueba_spec.cy.js",
-    "cypress:runChromeHeadless":"cypress run --headless --browser chrome --spec D:/Repositorio/Cypress/cypress/e2e/Prueba/0-prueba_spec.cy.js"
+    "cypress:open": "cypress open --e2e --browser chrome",
+    "cypress:execution": "cypress run --spec cypress/e2e/9-CucumberPOM/*",
+    "cypress:runDefault": "cypress run",
+    "cypress:runDefaultSpec": "cypress run --spec D:/Repositorio/Cypress/cypress/e2e/Prueba/0-prueba_spec.cy.js",
+    "cypress:runChrome": "cypress run --browser chrome --spec D:/Repositorio/Cypress/cypress/e2e/Prueba/0-prueba_spec.cy.js",
+    "cypress:runChromeHeadless": "cypress run --headless --browser chrome --spec D:/Repositorio/Cypress/cypress/e2e/Prueba/0-prueba_spec.cy.js"
   },
   "author": "",
   "license": "ISC",
   "devDependencies": {
-    "cypress": "^12.17.1"
+    "@badeball/cypress-cucumber-preprocessor": "latest",
+    "@bahmutov/cypress-esbuild-preprocessor": "^2.2.0",
+    "@shelex/cypress-allure-plugin": "^2.34.0",
+    "cypress": "^12.17.2",
+    "esbuild": "^0.18.17",
+    "multiple-cucumber-html-reporter": "^3.4.0"
+  },
+
+  "dependencies": {
+    "save-dev": "^0.0.1-security"
   }
 }
