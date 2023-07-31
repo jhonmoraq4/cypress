@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "test": "cypress open",
-    "test2": "echo \"Error: no test specified\" && exit 1",
+    "runOnChrome": "cypress run --browser chrome",
     "cypress:open": "cypress open --e2e --browser chrome",
     "cypress:execution": "cypress run --spec cypress/e2e/9-CucumberPOM/*",
     "cypress:runDefault": "cypress run",
