@@ -1,6 +1,6 @@
 import { Given, When, And, Then } from "@badeball/cypress-cucumber-preprocessor";
 //import { Given, When, Then } from "@cypress/cypress-cucumber-preprocessor";
-const homeSaucePage = require('../../e2e/9.1-PagePOM/homeSaucePage')
+const homeSaucePage = require('../e2e/9.1-PagePOM/homeSaucePage')
 
 
 Given("POM A user enters to the login Page", () => {
