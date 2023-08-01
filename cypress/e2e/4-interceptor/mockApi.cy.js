@@ -6,7 +6,7 @@ describe('Intercept demo',() => {
         cy.get('.new-todo').type('test{enter}')
         cy.get('.new-todo').type('wash dishes{enter}')
         
-        cy.get('.todo-list li').should('have.length',2)
+        cy.get('.todo-list li').should('have.length',4)
         
         .and('contain','test')
         .and('contain','wash dishes')
