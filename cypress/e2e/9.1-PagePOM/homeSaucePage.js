@@ -19,8 +19,6 @@ class homeSaucePage{
         this.elements.loginButton().click();
     }
 
-
-
 }
 
 module.exports = new homeSaucePage();
