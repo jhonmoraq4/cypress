@@ -50,6 +50,14 @@ pipeline {
         
         stage('Testing') {
             steps {
+                    script {
+                    // Create the cypress/report directory if it doesn't exist
+                    dir('cypress') {
+                        dir('report') {
+                            // Do nothing, just create the directory
+                        }
+                    }
+                }
                 bat "npm i" //si fuera un commando en shell en comando no seria Bat sino sh
                 bat "npx cypress run --browser ${BROWSER} --spec ${SPEC}"
             }
